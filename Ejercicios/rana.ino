@@ -5,7 +5,7 @@ background(255);
 // cara
 stroke(0);
 strokeWeight(5);
-fill (100,250,90);
+fill (60,220,40);
 ellipse (width/2, height/2, 200, 130);
 
 // Ojos
