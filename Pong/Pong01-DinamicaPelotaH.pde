@@ -32,6 +32,4 @@ void draw() {
   if (ballPosx<0+ballRadio || ballPosx> width-ballRadio) {
     ballVx=ballVx*-1;
   }
-
-  
 }
