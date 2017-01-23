@@ -1,19 +1,20 @@
 /*
 Dinámica para mover la pelota en horizontal 
 */
+
 // variables de la pelota
-float ballPosx=0;
-float ballPosy=0;
-float ballRadio=25;
-float ballVx=2;
+float ballX=0;
+float ballY=0;
+float radio=25;
+float vx=2;
 
 void setup() {
   // definimos el tamaño de la pantalla
   size(600, 200);
   background(0);
   // situamos la pelota en función de la pantalla
-  ballPosy=height/2;
-  ballPosx=width/3;
+  ballY=height/2;
+  ballX=width/3;
 }
 
 void draw() {
@@ -23,13 +24,14 @@ void draw() {
 
   // dibuja pelota
   fill(230);
-  ellipse(ballPosx, ballPosy, ballRadio*2, ballRadio*2);
+  ellipse(ballX, ballY, radio*2, radio*2);
   
    //Movimiento pelota
-  ballPosx=ballPosx+ballVx;
+  ballX=ballX+vx;
 
   // Rebote paredes
-  if (ballPosx<0+ballRadio || ballPosx> width-ballRadio) {
-    ballVx=ballVx*-1;
+  if (ballX<0+radio || ballX> width-radio) {
+    vx=vx*-1;
   }
 }
+
