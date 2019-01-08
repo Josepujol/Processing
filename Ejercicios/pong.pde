@@ -38,7 +38,7 @@ void draw() {
 
   //Movimiento pelota
   ballPosx=ballPosx+ballVx;
-  ballPosx=ballPosx+ballVx;
+  ballPosy=ballPosy+ballVy;
 
   // Rebote paredes
   if (ballPosx<0 || ballPosx> width-ballRadio) {
