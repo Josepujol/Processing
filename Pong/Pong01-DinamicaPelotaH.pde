@@ -6,7 +6,7 @@ Dinámica para mover la pelota en horizontal
 float ballX=0;
 float ballY=0;
 float radio=25;
-float vx=2;
+float velX=2;
 
 void setup() {
   // definimos el tamaño de la pantalla
@@ -27,11 +27,11 @@ void draw() {
   ellipse(ballX, ballY, radio*2, radio*2);
   
    //Movimiento pelota
-  ballX=ballX+vx;
+  ballX=ballX+velX;
 
   // Rebote paredes
   if (ballX<0+radio || ballX> width-radio) {
-    vx=vx*-1;
+    velX=velX*-1;
   }
 }
 
