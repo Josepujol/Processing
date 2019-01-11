@@ -5,7 +5,7 @@ Dinámica para mover la pelota en horizontal
 // variables de la pelota
 float ballX=0;
 float ballY=0;
-float radio=25;
+float ballR=25;
 float velX=2;
 
 void setup() {
@@ -24,14 +24,13 @@ void draw() {
 
   // dibuja pelota
   fill(230);
-  ellipse(ballX, ballY, radio*2, radio*2);
+  ellipse(ballX, ballY, ballR*2, ballR*2);
   
    //Movimiento pelota
   ballX=ballX+velX;
 
   // Rebote paredes
-  if (ballX<0+radio || ballX> width-radio) {
+  if (ballX<0+ballR || ballX> width-ballR) {
     velX=velX*-1;
   }
 }
-
