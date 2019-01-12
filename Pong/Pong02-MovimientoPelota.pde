@@ -3,11 +3,11 @@ Movimiento de la pelota
 */
 
 // variables de la pelota
-float ballX=0;
-float ballY=0;
-float ballR=25;
-float velX=random(1, 2);
-float velY=random(1, 2);
+float ballX=0; // posicion x pelota
+float ballY=0; // posicion y pelota
+float ballR=25; // radio pelota
+float velX=random(1, 2); // desplazamiento x pelota
+float velY=random(1, 2);  // desplazamiento y pelota
 
 void setup() {
   // definimos el tamaño de la pantalla
