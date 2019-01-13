@@ -49,14 +49,14 @@ void draw() {
   ballX=ballX+velX;
   ballY=ballY+velY;
 
-  // Rebote paredes laterales
-  if (ballX<0+ballR || ballX> width-ballR) {
-    velX=velX*-1;
+  // Rebote paredes superior
+  if (ballY<0+ballR) {
+    velY=velY*-1;
   }
 
-  // Rebote paredes verticales
-  if (ballY<0+ballR || ballY> height-ballR) {
-    velY=velY*-1;
+  // Fin de juego
+  if ( ballY> height-ballR) {
+    noLoop();
   }
   
   // deteccion padle pelota
