@@ -53,8 +53,12 @@ void draw() {
   if (ballY<0+ballR) {
     velY=velY*-1;
   }
-
-  // Fin de juego
+ // Rebote paredes laterales
+  if (ballX<0+ballR || ballX> width-ballR) {
+    velX=velX*-1;
+}
+ 
+ // Fin de juego
   if ( ballY> height-ballR) {
     noLoop();
   }
